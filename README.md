@@ -6,11 +6,11 @@ This version includes some functionality:
 - Track change and rewind
 - Visual effects
 
-## Play / pause
+## Playback and pause
 
 There is a button on the player to play or pause a track; when pressed, it changes state.
 
-## Fast-forward / rewind
+## Track change and rewind
 
 On the player, there are buttons for switching between tracks, as well as an opportunity to rewind the current track using the progress bar.
 
