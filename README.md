@@ -1,4 +1,4 @@
-# Mustream version: 1.0.0
+# Mustream version: 1.0.2
 
 This version includes some functionality:
 
