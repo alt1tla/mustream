@@ -1,0 +1,188 @@
+/* Font */
+
+@font-face {
+  font-family: "Exo 2";
+  src: url("../font/Exo2.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.exo-2-200 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.exo-2-300 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.exo-2-400 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.exo-2-500 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.exo-2-600 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.exo-2-700 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.exo-2-800 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.exo-2-900 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  /* Colors */
+  --bg-color: #fefdf8;
+  --text-color: #0e1116;
+  --bg-accent-color: #f0a963;
+  --accent-color-hover: #374a67;
+  --accent-color: #61a1d7;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.container {
+  background-color: var(--bg-color);
+  width: 600px;
+  padding: 25px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+  -webkit-perspective: 350px;
+  perspective: 350px;
+}
+
+.song-info {
+  background-color: var(--bg-color);
+  padding-left: 160px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.song-info .song-name {
+  font-size: 2rem;
+}
+
+.song-info .artist-name {
+  margin-bottom: 10px;
+}
+
+.song-info .progress {
+  background-color: var(--bg-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.song-info .progress .fill-bar {
+  width: 0%;
+  height: 10px;
+  border-radius: 25px;
+  background: var(--bg-accent-color);
+}
+
+.song-info .time {
+  margin: 20px 10px 20px 0px;
+  text-align: end;
+}
+
+.cover {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background: url("../img/billie.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  block-size: cover;
+  border: 10px solid var(--bg-color);
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  transition: all ease-in-out 0.4s;
+}
+
+.active {
+  animation: gradient 4s ease-in-out 0s infinite alternate;
+  border-color: var(--bg-accent-color);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: var(--bg-color);
+  margin-left: 20px;
+  width: 150px;
+  height: 25px;
+  border-radius: 25px;
+}
+
+.controls button {
+  font-size: 1.5rem;
+  color: var(--font-color);
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+
+.controls button:hover {
+  color: var(--bg-accent-color);
+  font-size: 2.5rem;
+}
+
+@keyframes gradient {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 70%;
+  }
+}
