@@ -18,7 +18,7 @@ On the player, there are buttons for switching between tracks, as well as an opp
 
 When playing a track, the track cover artwork starts to flicker.
 
-## Screenshot
+## Screenshots
 
 <img src="./static/img/screenshot-1.jpeg" alt="mustream interface pause" />
 <img src="./static/img/screenshot-2.jpeg" alt="mustream interface play" />
