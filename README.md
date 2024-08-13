@@ -1,4 +1,4 @@
-# Mustream version: 1.0.2
+# Mustream version: 1.0.0
 
 This version includes some functionality:
 
@@ -17,3 +17,8 @@ On the player, there are buttons for switching between tracks, as well as an opp
 ## Visual effects
 
 When playing a track, the track cover artwork starts to flicker.
+
+## Screenshot
+
+<img src="./static/img/screenshot-1.jpeg" alt="mustream interface pause" />
+<img src="./static/img/screenshot-2.jpeg" alt="mustream interface play" />
